@@ -125,7 +125,7 @@ span {
     font: bold;
     color: var(--GrayishBlue);
 }
-@media (min-width: 380px) {
+@media (min-width: 675px) {
     body {
         background-image: url(images/bg-desktop.png);
         background-position: bottom;
