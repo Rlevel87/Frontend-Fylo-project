@@ -14,8 +14,8 @@ body {
     background-color: var(--VeryDarkBlue);
     font-family: 'Raleway', sans-serif;
     background-image: url(images/bg-mobile.png);
-    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 .container{
     min-height: 100vh;
@@ -125,15 +125,17 @@ span {
     font: bold;
     color: var(--GrayishBlue);
 }
-@media (min-width: 675px) {
+@media (min-width: 1440px) {
     body {
         background-image: url(images/bg-desktop.png);
-        background-position: bottom;
+        background-position-y: bottom;
+        background-size: unset;
+        background-color: var(--VeryDarkBlue);        
     }
     .container{
         width: 60%;
         flex-direction: row;   
-        margin-left: 22em;
+        margin: 0 auto;
     }
     .container-left {
         width: 40%;
@@ -161,27 +163,31 @@ span {
         border-top: 25px solid white;
     }
 }
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.attribution 
-    { font-size: 11px; 
+@media (min-width: 1441px) {
+    body {
+        background-image: url(images/bg-desktop.png);
+        background-position-y: bottom;
+        background-size: 1700px;
+        background-color: var(--VeryDarkBlue);        
+    }
+}
+    @media (min-width: 1688px) {
+        body {
+            background-image: url(images/bg-desktop.png);
+            background-position-y: bottom;
+            background-size:  1900px;
+            background-color: var(--VeryDarkBlue);        
+        }
+    }
+        @media (min-width: 1900px) {
+            body {
+                background-image: url(images/bg-desktop.png);
+                background-position-y: bottom;
+                background-size:  2560px;
+                background-color: var(--VeryDarkBlue);        
+            }
+        }
+.attribution { 
     text-align: center; 
 }
 .attribution a 
